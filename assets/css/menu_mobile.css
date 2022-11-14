@@ -1,0 +1,49 @@
+.btnMobile {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .btnMobile {
+        display: block;
+        border: none;
+        background-color: #222;
+        color: white;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: bold;
+        font-size: 1.0rem;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 300;
+        margin: 10px;
+    }
+
+    .btnMobile i {
+        margin-right: 8px;
+        transition: 0.2s;
+    }
+
+    .btnMobile.active i {
+        transition: 0.2s;
+        transform: rotate(90deg);
+    }
+
+    #menu {
+        position: absolute;
+        background-color: #FB5;
+        display: none;
+        width: 180px;
+        z-index: 200;
+        top: 0;
+        padding: 60px 0 20px 0;
+        box-shadow: 2px 2px 7px #00000046;
+    }
+
+    #menu.active {
+        display: block;
+        animation: mostrar 0.2s forwards;
+    }
+    
+}

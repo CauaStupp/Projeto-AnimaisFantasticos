@@ -1,0 +1,21 @@
+.lista-accordion dt {
+    cursor: pointer;
+}
+
+.lista-accordion dd {
+    display: none;
+}
+
+.lista-accordion dt::after {
+    content: '⮯';
+    margin-left: 5px;
+}
+
+.lista-accordion dt.ativo::after {
+    content: '⮭';
+}
+
+.lista-accordion dd.ativo {
+    display: block;
+    animation: slide 0.5s forwards;
+}

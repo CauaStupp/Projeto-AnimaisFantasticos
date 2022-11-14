@@ -1,0 +1,8 @@
+.tab-texto section {
+    display: none;
+}
+
+.tab-texto section.ativo {
+    display: block !important;
+    animation: mostrar 0.5s forwards;
+}

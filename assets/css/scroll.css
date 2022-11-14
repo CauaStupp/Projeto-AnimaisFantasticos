@@ -1,0 +1,10 @@
+.scroll {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.scroll.ativo {
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateX(0px);
+}

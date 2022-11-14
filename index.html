@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7fe5be44e1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Animais Fantásticos</title>
 </head>
 <body>
     
     <nav class="menu menu-scroll scroll">
-        <ul>
+        <button class="btnMobile"><i class="fa-solid fa-bars"></i>Menu</button>
+        <ul id="menu">
             <li><a href="#animais">Animais</a></li>
+            <li data-dropdown class="dropdown">
+                <a href="sobre.html">Sobre <i class="fa-solid fa-arrow-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                    <li><a href="socios.html">Sócios</a></li>
+                </ul>
+            </li>
             <li><a href="#faq">Faq</a></li>
             <li><a href="#contato">Contato</a></li>
             <li><a href="https://www.origamid.com/">Dev →</a></li>
@@ -141,6 +152,13 @@
         </dl>
     </section>
     
+    <section class="grid-section numeros scroll">
+        <h1 class="titulo">Números</h1>
+        <div class="numeros-grid">
+            
+        </div>
+    </section>
+
     <section class="grid-section contato scroll" id="contato">
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
@@ -151,6 +169,8 @@
             <li>+55 (21) 9999-9999</li>
             <li>Rua do Conde, nº 21</li>
             <li>Rio de Janeiro - RJ</li>
+            <li data-semana="1,2,3,4,5" data-horas="8, 18">Seg á Sexta das 5 ás 18</li>
+            <li>Doe <span class="btc-preco">0</span> Bitcoin para nos ajudar</li>
         </ul>
     </section>
     
@@ -159,6 +179,6 @@
     </footer>
 
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
 </body>
 </html>
